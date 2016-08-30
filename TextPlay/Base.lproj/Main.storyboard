@@ -68,14 +68,43 @@
                                     <constraint firstItem="cay-hX-jAA" firstAttribute="height" secondItem="jdt-dQ-de4" secondAttribute="height" id="sI5-qW-C4L"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23x-qC-qni">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpk-Kx-qvL">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hci-B6-5qU">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Hci-B6-5qU" firstAttribute="top" secondItem="gpk-Kx-qvL" secondAttribute="top" id="2p1-yK-UL5"/>
+                                    <constraint firstItem="gpk-Kx-qvL" firstAttribute="leading" secondItem="23x-qC-qni" secondAttribute="leading" id="4Oe-Ao-Ku7"/>
+                                    <constraint firstItem="Hci-B6-5qU" firstAttribute="width" secondItem="gpk-Kx-qvL" secondAttribute="width" id="H6D-bU-zmF"/>
+                                    <constraint firstItem="Hci-B6-5qU" firstAttribute="leading" secondItem="gpk-Kx-qvL" secondAttribute="trailing" id="HxM-vI-V8I"/>
+                                    <constraint firstItem="gpk-Kx-qvL" firstAttribute="width" secondItem="23x-qC-qni" secondAttribute="width" multiplier="1:2" id="Q2J-Id-Q40"/>
+                                    <constraint firstItem="gpk-Kx-qvL" firstAttribute="height" secondItem="23x-qC-qni" secondAttribute="height" id="RoF-wl-5ar"/>
+                                    <constraint firstItem="gpk-Kx-qvL" firstAttribute="top" secondItem="23x-qC-qni" secondAttribute="top" id="ZA7-jW-7AQ"/>
+                                    <constraint firstItem="Hci-B6-5qU" firstAttribute="height" secondItem="gpk-Kx-qvL" secondAttribute="height" id="xZT-Qj-oxO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.099084051724137936" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jdt-dQ-de4" firstAttribute="trailing" secondItem="SBD-fD-X4l" secondAttribute="trailing" id="5Io-8h-6DZ"/>
                             <constraint firstItem="jdt-dQ-de4" firstAttribute="leading" secondItem="SBD-fD-X4l" secondAttribute="leading" id="CrM-FI-Rfe"/>
+                            <constraint firstItem="23x-qC-qni" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:4" id="Hdy-Jc-gMQ"/>
                             <constraint firstItem="SBD-fD-X4l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KP7-uO-J94"/>
+                            <constraint firstItem="SBD-fD-X4l" firstAttribute="top" secondItem="23x-qC-qni" secondAttribute="bottom" constant="20" id="Zq6-0V-N2G"/>
                             <constraint firstItem="jdt-dQ-de4" firstAttribute="top" secondItem="SBD-fD-X4l" secondAttribute="bottom" constant="20" id="aMa-VW-2sH"/>
+                            <constraint firstItem="23x-qC-qni" firstAttribute="leading" secondItem="SBD-fD-X4l" secondAttribute="leading" id="e9n-Ye-cj5"/>
                             <constraint firstItem="SBD-fD-X4l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i3J-o6-TIB"/>
+                            <constraint firstItem="23x-qC-qni" firstAttribute="trailing" secondItem="SBD-fD-X4l" secondAttribute="trailing" id="p5E-ka-iHR"/>
                             <constraint firstItem="jdt-dQ-de4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:4" id="vlU-ZM-cAk"/>
                         </constraints>
                     </view>
