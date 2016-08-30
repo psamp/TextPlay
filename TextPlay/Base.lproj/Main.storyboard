@@ -26,6 +26,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Cpg-O8-q5O"/>
+                                </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdt-dQ-de4">
                                 <subviews>
@@ -35,6 +38,9 @@
                                         <state key="normal" title="Left">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="updateLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yhu-it-HRL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLH-Rc-H1b">
                                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -42,6 +48,9 @@
                                         <state key="normal" title="Clear">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="clearLabels" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSy-Zw-FoL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXK-Mo-ZRD">
                                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,6 +58,9 @@
                                         <state key="normal" title="Right">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="updateLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAx-d9-CfW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,7 +106,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.099084051724137936" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jdt-dQ-de4" firstAttribute="trailing" secondItem="SBD-fD-X4l" secondAttribute="trailing" id="5Io-8h-6DZ"/>
                             <constraint firstItem="jdt-dQ-de4" firstAttribute="leading" secondItem="SBD-fD-X4l" secondAttribute="leading" id="CrM-FI-Rfe"/>
@@ -108,6 +120,13 @@
                             <constraint firstItem="jdt-dQ-de4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:4" id="vlU-ZM-cAk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clearButton" destination="HLH-Rc-H1b" id="KPw-N4-UbQ"/>
+                        <outlet property="leftButton" destination="cay-hX-jAA" id="TaD-7W-inr"/>
+                        <outlet property="leftLabel" destination="gpk-Kx-qvL" id="e7C-FI-b6M"/>
+                        <outlet property="rightButton" destination="NXK-Mo-ZRD" id="f6M-tu-hH9"/>
+                        <outlet property="rightLabel" destination="Hci-B6-5qU" id="Oau-Hc-xkD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
